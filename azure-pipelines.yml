@@ -18,3 +18,13 @@ steps:
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
     tasks: 'assembleDebug'
+
+
+- task: AndroidSigning@3
+  inputs:
+    apkFiles: '**/*.apk'
+    apksignerKeystoreFile: 'android.jks'
+    apksignerKeystorePassword: 'Toronto1'
+    apksignerKeystoreAlias: 'MyAndroidJks'
+    apksignerKeyPassword: 'Toronto1'
+    zipalign: false
