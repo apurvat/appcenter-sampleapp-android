@@ -26,3 +26,12 @@ steps:
     apksignerKeystoreAlias: 'MyAndroidKey'
     apksignerKeyPassword: 'Toronto1'
     zipalign: false
+- task: AppCenterDistribute@3
+  inputs:
+    serverEndpoint: 'App Center'
+    appSlug: 'apurvat/TestNew'
+    appFile: '**/*.apk'
+    symbolsOption: 'Android'
+    releaseNotesOption: 'input'
+    releaseNotesInput: 'Distributing thru pipeline'
+    destinationType: 'groups'
