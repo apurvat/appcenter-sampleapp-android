@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public CharSequence getPageTitle(int position) {
+            // some comment 
             switch (position) {
                 case 0:
                     return WelcomeActivity.getPageName();
