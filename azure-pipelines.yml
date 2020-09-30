@@ -25,6 +25,6 @@ steps:
     apkFiles: '**/*.apk'
     apksignerKeystoreFile: 'android.jks'
     apksignerKeystorePassword: 'Toronto1'
-    apksignerKeystoreAlias: 'MyAndroidJks'
+    apksignerKeystoreAlias: 'MyAndroidApk'
     apksignerKeyPassword: 'Toronto1'
     zipalign: false
